@@ -4,7 +4,7 @@ bot追加URL:https://discord.com/api/oauth2/authorize?client_id=6052469391513354
 # コマンド一覧
 ## ;register
 一番初めにVCのIDを設定するコマンド。<br>
-![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/697761/dbc61ccf-66b4-2caf-d89c-eb616dad2c3e.png)<br>
+![image.png](https://github.com/pinnsann/team_division_discord_bot/blob/main/td%20image/register.png?raw=true)<br>
 上の画像のようにVCを右クリックしたら出るメニューからIDをコピーし<br>
 ```
 ;register [team1のVCID]　[team2のVCID]　[ロビー（集合場所）のVCID]
@@ -13,7 +13,7 @@ bot追加URL:https://discord.com/api/oauth2/authorize?client_id=6052469391513354
 間違えた場合はもう1回コマンドを打ち直すと更新されます。<br>
 ## ;td
 チーム分けコマンド<br>
-![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/697761/651f476e-ceef-69c4-3453-97d70bbfb0d6.png)<br>
+![image.png](https://github.com/pinnsann/team_division_discord_bot/blob/main/td%20image/td.png?raw=true)<br>
 上の画像のようにキュー番号とチーム分け結果が表示されます。もちろんbotははじきます<br>
 ```
 ;td 
@@ -44,15 +44,17 @@ bot追加URL:https://discord.com/api/oauth2/authorize?client_id=6052469391513354
 ```
 のように入力してください。
 
-## ;setwin
-自分の勝利数を設定します。コマンドを打った人の勝数が変わるのでかならず自分自身でコマンドを打ってください。勝利数タイプはゲーム名やキーワードなど勝利数を紐づけるワードを選択してください。今ある数字に追加したいときはadd、今ある数字を変えたいときはreplaceを選択してください。
+## ;replacewin
+勝利数を書き換えます。勝利数タイプはゲーム名やキーワードなど勝利数を紐づけるワードを選択してください。メンションがない場合コマンドを実行した本人、メンションした場合メンションした人の勝利数を書き換えます。
 ```
-;setwin [勝利数タイプ] [add or replace] [数字]
+;setwin [勝利数タイプ] [数字] [メンション]
 ```
 のように入力してください。
-## ;getwin
-自分の勝利数を確認します
+## ;controlwin
+勝利数を操作します。コマンドを使うと以下の画像のようなメッセージが表示されます。
+![image.png](https://github.com/pinnsann/team_division_discord_bot/blob/main/td%20image/controlwin.png?raw=true)
+下のリアクションを押すとそれぞれのアクションがなされます。左から順番に上矢印は勝利数を一つ上げる、下矢印は一つ下げる、2つ矢印は０にする、ばつ印はこのメッセージを消去する事ができます。
 ```
-;getwin [勝利数タイプ]
+;controlwin [勝利数タイプ] [メンション]
 ```
 のように入力してください。
