@@ -52,7 +52,7 @@ bot追加URL:https://discord.com/api/oauth2/authorize?client_id=6052469391513354
 のように入力してください。
 ## ;controlwin
 勝利数を操作します。コマンドを使うと以下の画像のようなメッセージが表示されます。
-![image.png](https://github.com/pinnsann/team_division_discord_bot/blob/main/td%20image/controlwin.png?raw=true)
+![image.png](https://github.com/pinnsann/team_division_discord_bot/blob/main/td%20image/controlwin.png?raw=true)<br>
 下のリアクションを押すとそれぞれのアクションがなされます。左から順番に上矢印は勝利数を一つ上げる、下矢印は一つ下げる、2つ矢印は０にする、ばつ印はこのメッセージを消去する事ができます。
 ```
 ;controlwin [勝利数タイプ] [メンション]
